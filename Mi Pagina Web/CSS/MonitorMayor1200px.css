@@ -1,0 +1,53 @@
+@media (min-width:1280px) { /*Pantallas de mayor a 1280*/
+	body{
+		background: black;
+	}
+
+	video{
+		max-width:5000px;
+		max-height:90%;
+		-webkit-filter:opacity(40%);
+		display: none;
+	}
+
+/*===============================Portada==============================*/
+	.contenedorPortada{
+		width:92%;
+		margin: 0 auto;
+		background-color: black;
+		min-height:950px;
+	}
+
+	/*===========================Habilidades==========================*/
+	.contenedorSkills{
+		width:100%;
+		min-height:1000px;
+		background-image:url("../Imagenes/computer-820281_1920.jpg"); 
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.contenedor-frontBack{
+		width:80%;
+		margin: 0 auto;
+		height:200px;
+	}
+	.contenedor-frontBack .front{
+		box-shadow: 0 0  30px black;
+	}
+
+	.contenedor-frontBack .Back{
+		box-shadow: 0 0 30px black;
+	}
+
+	/*============Contacto=================*/
+
+	.contenedorContacto{
+		min-height:950px;
+		
+	}
+
+	.contenedorContacto .contenedor-contacto{
+		padding:2%;
+	}
+}

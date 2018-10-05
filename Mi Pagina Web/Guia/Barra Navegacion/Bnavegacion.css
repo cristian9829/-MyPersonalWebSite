@@ -1,0 +1,83 @@
+body{
+	margin: 0;
+	font-family: sans-serif;
+}
+
+/*====================Barra de Navegacion=============*/
+
+header{
+	width: 100%;
+	background-color: grey;
+}
+
+#btn-menu{
+	display: none;
+}
+
+header label{
+	display: none;
+	width: 30px;
+	height: 30px;
+	padding:10px;
+	border-right: 1px solid white; 
+}
+
+header label:hover{
+	cursor: pointer;
+	background: rgba(0,0,0,0.3); 
+}
+
+.menu ul{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: flex; /*los li se han flexibles y los coloque en una fila */
+	justify-content:flex-end;/*Ubicar los botones*/
+}
+
+.menu li{
+	border-right: 1px solid white;
+	text-align: center;
+	/*flex-grow: 1;*/ /*Nos permite definir la propocion de crecimiento osea los li*/
+}
+
+.menu li:hover{
+	background: rgba(0,0,0,0.3);
+}
+
+.menu li a{
+	display:block;
+	padding:15px 20px;
+	color: white;
+	text-decoration: none;
+}
+
+
+@media (max-width:768px) {
+	header label{
+		display: block;
+	}
+
+	.menu{
+		position: absolute;
+		background: #4E94AB;
+		width: 70%;
+		margin-left: -70%;
+		transition:  all 0.5s;
+	}
+
+	.menu ul{
+		flex-direction:column; 
+	}
+
+	.menu li{
+		border-top:1px solid white; 
+	}
+
+	#btn-menu:checked ~ .menu{
+		margin: 0;
+	}
+}
+
+
+/*Contenido*/
