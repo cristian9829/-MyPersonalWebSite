@@ -1,0 +1,45 @@
+/*Propiedades Flex*/
+
+/*::::::::::::::::::::::::::::::::::::*/
+/*Propiedades para los contenedores*/
+
+
+/*display:flex : Lo que hace es ajustar el alto o el ancho que estan dentro del contenedor, de manera que se adapte en todo el espacio disponible*/
+/*flex-direction: Nos permite decirle al contenedor en que direccion va ir, por defecto esta propiedad viene en row (fila) o column*/
+/*flex-wrap: Nos permite controlar la direccion pero cuando estos superen el ancho dek contenedor*/
+/*justify-content: Nos permite alinear los elementos de forma horizontal*/
+/*align-items:Nos permite alinear los elementos de manera vertical*/
+/*align-content: Alinea los elementos tambien verticalemnte pero cuando empieza a funcionar la propiedad flex-wrap:wrap*/
+/*flex-flow: La forma de breviar flex-direction y flex-wrap*/
+
+/*::::::::::::::::::::::::::::::::::::::*/
+/*Propiedades para los hijos del contenedor*/
+/*order:Nos permite establecer el orden en el cual en donde van a estar el elemento*/
+/*flex-grow:Nos permite establecer el crecimiento de cada elemento */
+/*flex-shrink: Nos permite redicir los elementos, el contrario de flex-grow */ 
+/*flex-basis : Nos permite establecer el ancho o el alto base, antes de que se distibuya el espacio de los elementos del contenedor*/
+/*align-self: Nos permite alinear cada elemento de manera vertical*/ 
+/*flex: Es la mezcla de las propiedades de flex-grow, flex-shrink, flex-basis*/
+
+div{
+	width:700px;
+	height: 500px;
+	border: 2px solid blue;
+	color: white;
+	font-size: 50px;
+	line-height: 100px;
+	margin: auto;
+}
+
+article{
+	width: 200px;
+	height: 100px;
+	background: crimson;
+	text-align: center;
+	margin: 10px;
+}
+
+.contenedor{
+	display: flex;
+	justify-content:space-around; /*space-around,center,flex-end,flex-start , space-between*/
+}
