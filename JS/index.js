@@ -10,7 +10,14 @@
 $(document).ready(function(){ /*Bloque de codigo JQUERY*/
 
 /*==========Funcionamiento con animacion de los botones de la portada======*/
-	
+	// $(".contenedor-boton button").on("click",function(e){
+	// 	e.preventDefault();
+	// 	animacion("#contenedorPortada");
+	// 	$("#acerdade").css("color","#F1C40F");
+	// 	$("#Habilidades,#Educacion,#Portafolio,#Intereses,#Hablemos").css("color","white");
+	// })
+
+
 	$("#Habilidades").on("click",function(e){
 		e.preventDefault();
 		animacion("#contenedorHabilidades");

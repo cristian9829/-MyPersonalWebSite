@@ -3,17 +3,22 @@
 	<head>
 		<meta charset="UTF-8">
 		<!-- viewport responsive -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1,minimum-scale=1">
 
 		<!-- Icono pestaña web -->
-		<link rel="shortcut icon" href="man.png" />
+		<link rel="shortcut icon" href="Brands.jpg" />
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
 		<!-- ===============Fuentes=============== -->
 		<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">	
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 		<!-- ================Css================== -->
-		<link rel="stylesheet" type="text/css" href="CSS/tablets1024-768.css">
+		<link rel="stylesheet" type="text/css" href="CSS/tablets1279-768.css">
 		<link rel="stylesheet" type="text/css" href="CSS/Monitores1280-1680.css">
 		<!-- <link rel="stylesheet" type="text/css" href="CSS/Movil.css"> -->
 		<title>Cristian Clavijo</title>
@@ -24,11 +29,10 @@
 			<div class="contenedorTitulo">
 				<!-- <input type="checkbox" id="btn-menu">
 				<label for="btn-menu"><img src="Icons/menu.png"></label> -->
-				<h1>Cristian Clavijo Web</h1>				
+				<img class="logo-menu" src="LogoPersonal.png">			
 			</div>
 			<nav class="menu">
 				<ul>
-					<li><a id="acercade" href="">ACERCA DE</a></li>
 					<li><a id="Habilidades" href="">HABILIDADES</a></li>
 					<li><a id="Educacion" href="">EDUCACION</a></li>
 					<li><a id="Portafolio" href="">PORTAFOLIO</a></li>
@@ -37,61 +41,127 @@
 				</ul>
 			</nav>
 		</header>
-		<video src="Videos/Keyboard - 10822.mp4" autoplay loop>
+		<video src="Videos/Background - 9584.mp4" autoplay loop>
 		</video>			
 		<!-- =====================PORTADA=========================== -->
 		
-		<div class="contenedorPortada">
+		<div id="contenedorPortada" class="contenedorPortada">
 			<div class="titulo">
-				<h1>Cristian Clavijo Web</h1>				
+				<img class="logo" src="LogoPersonal.png">	
+			</div>
+			<div class="saludo">
+				<p>BIENVENIDO A MI SITIO WEB!</p>
 			</div>
 			<div class="contenedorFoto">
-				<img src="Imagenes/foto.jpeg" alt="Imagen-personal" class="foto">		
+				<img src="Imagenes/foto.jpeg" alt="Imagen-personal" class="foto">	
 			</div>
-
-<!-- 			<div class="contenedorBotones">
-				<ul class="botones">
-					<button id="acercade">Acerca de</button>
-					<button id="Habilidades">Habilidades</button>
-					<button id="Educacion">Educacion</button>
-					<button id="Portafolio">Portafolio</button>
-					<button id="Intereses">Intereses</button>
-					<button id="Hablemos">Hablemos</button>
-				</ul>
-			</div>	 -->
+			<div class="contenedor-boton">
+				<button id="acercade">ACERCA DE</button>
+			</div>
+			<div id="contenedorHabilidades" class="contenedor-SincontenidoHabilidades">
+				
+			</div>
 		</div>
 				
-	<!-- ============================SKIILLS================================== -->
-		<div id="contenedorHabilidades" class="contenedorSkills">
+	<!-- ============================Habilidades================================== -->
+		<div class="contenedorSkills">
 			<div class="contenedorTitulo">
 				<p>HABILIDADES</p>
 			</div>
 			<div class="contenedor-imagenes-skills">
 				<div class="contenedor-frontBack">
-					<img class="front" src="Imagenes/frontend.png">
-					<img class="Back" src="Imagenes/backend.png">
+					<img class="front btn btn-success" data-toggle="modal" data-target="#myModalFront" src="Imagenes/frontend.png">
+					<img class="Back btn btn-primary" data-toggle="modal" data-target="#myModalBack" src="Imagenes/backend.png">
 				</div>
+				  <!-- The Modal FrontEnd-->
+				  <div class="modal fade" id="myModalFront">
+				    <div class="modal-dialog modal-lg">
+				      <div class="modal-content">
+				      
+				        <!-- Modal Header -->
+				        <div class="modal-header">
+				          <h4 class="modal-title">Conocimientos en FrontEnd:</h4>
+				          <button type="button" class="close" data-dismiss="modal">&times;</button>
+				        </div>
+				        
+				        <!-- Modal body -->
+				        <div class="modal-body">
+				          <div class="contenedor-imagenes-skills-logos-Front">
+				          	<div class="fila1">
+					    		<img class="imagen-skills" src="imagenesSkills/Fundamentos_de_HTML.png" alt="HTML">
+								<img class="imagen-skills" src="imagenesSkills/CSS_y_Diseño_Web_Responsive.png" alt="CSS">
+								<img class="imagen-skills" src="imagenesSkills/bootstrap.png" alt="Bootstrap">
+								<img class="imagen-skills" src="imagenesSkills/foundationcss.jpg" alt="Foundation">
+								<img class="imagen-skills" src="imagenesSkills/materialize.png" alt="Materialize Css">	
+								<img class="imagen-skills" src="imagenesSkills/1_7WlIAkSvQu3CcqxYjra_4A.jpeg" alt="Wordpress">
+								<hr>
+								<img class="imagen-skills" src="imagenesSkills/Interactividad_usando_JavaScript.png" alt="JavaScript">
+								<img class="imagen-skills" src="imagenesSkills/jquery.png" alt="Jquery">	
+								<img class="imagen-skills" src="imagenesSkills/jqueryui.jpg" alt="Jquery UI">
+								<img class="imagen-skills" src="imagenesSkills/prototype.png" alt="Prototype">            		
+				          	</div>
+	
+				          </div>
+				        </div>
+				        
+				        <!-- Modal footer -->
+				        <div class="modal-footer">
+				          <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+				        </div>
+				        
+				      </div>
+				    </div>
+				  </div>
+
+				  <!-- The Modal FrontEnd-->
+				  <div class="modal fade" id="myModalBack">
+				    <div class="modal-dialog modal-lg">
+				      <div class="modal-content">
+				      
+				        <!-- Modal Header -->
+				        <div class="modal-header">
+				          <h4 class="modal-title">Conocimientos en BackEnd:</h4>
+				          <button type="button" class="close" data-dismiss="modal">&times;</button>
+				        </div>
+				        
+				        <!-- Modal body -->
+				        <div class="modal-body">
+				          <div class="contenedor-imagenes-skills-logos-Front">
+				          	<div class="fila1">
+								<img class="imagen-skills" src="imagenesSkills/ajax.png" alt="">
+								<img class="imagen-skills" src="imagenesSkills/api.png" alt="">
+								<img class="imagen-skills" src="imagenesSkills/php.png" alt="">
+								<img class="imagen-skills" src="imagenesSkills/node.jpg" alt="">          		
+					    		<img class="imagen-skills" src="imagenesSkills/delphi.png" alt="">
+				          	</div>
+	
+				          </div>
+				        </div>
+				        
+				        <!-- Modal footer -->
+				        <div class="modal-footer">
+				          <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+				        </div>
+				        
+				      </div>
+				    </div>
+				  </div>
+
+
 				<div class="imagenes">
-					<img class="imagen-skills" src="imagenesSkills/html.png" alt="HTML">
-					<img class="imagen-skills" src="imagenesSkills/css3.png" alt="CSS">
-					<img class="imagen-skills" src="imagenesSkills/responsive.jpg" alt="Responsive Indesig">
-					<img class="imagen-skills" src="imagenesSkills/bootstrap.png" alt="Bootstrap">
-					<img class="imagen-skills" src="imagenesSkills/foundation.png" alt="Foundation">
-					<img class="imagen-skills" src="imagenesSkills/materialize.png" alt="Materialize Css">
-					<img class="imagen-skills" src="imagenesSkills/wordPress.png" alt="Wordpress">
-					<img class="imagen-skills" src="imagenesSkills/javascript.jpg" alt="JavaScript">
-					<img class="imagen-skills" src="imagenesSkills/jquery.png" alt="Jquery">
-					<img class="imagen-skills" src="imagenesSkills/jqueryui.jpg" alt="Jquery UI">
-					<img class="imagen-skills" src="imagenesSkills/prototype.png" alt="Prototype">
+					
 				</div>
+			</div>
+			<div id="contenedorEducacion" class="contenedor-SincontenidoEducacion">
+				
 			</div>
 		</div>
 		
 		<!-- ======================================EDUCACION====================================== -->
 
-		<div id="contenedorEducacion" class="contenedorEducacion">
+		<div class="contenedorEducacion">
 			<div class="contenedorTitulo">
-				<p>Educacion</p>
+				<p>EDUCACION</p>
 			</div>
 			<div class="contenedor-Educacion">
 				<div class="titulo">
@@ -170,67 +240,387 @@
 					<p>Curso de Adobe Indesign</p>
 				</div>
 			</div>	
+
+			<div id="contenedorPortafolio" class="contenedor-SincontenidoPortafolio">				
+			</div>
 		</div>
 
 		<!-- =======================PORTAFOLIO================================== -->
 		<div id="contenedorPortafolio" class="contenedorPortafolio">
 			<div class="contenedorTitulo">
-				<p>Portafolio</p>
+				<p>PORTAFOLIO</p>
 			</div>
 			<div class="contenedor-portafolio-proyectos">
 				<div class="fila1">
 					<div class="contenedor-imagen-text">
 						<a href=""><img src="ImagenesPortafolio/turismo.png" alt=""></a>
-						<p>Pagina Turismo Colombia</p>				
+						<p>Turismo Colombia - <strong>Materialize Css</strong></p>	
+						<div class="contenedor-botones">
+							<a href=""><button class="btn btn-primary">Visualizar</button></a>
+							<a href=""><button class="btn btn-secondary">Ver en Github</button></a>
+							<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">Ver codigo fuente</button>
+							<!-- The Modal -->
+							<div class="modal fade" id="myModal">
+						    	<div class="modal-dialog modal-lg">
+							        <div class="modal-content">
+							      
+								        <!-- Modal Header -->
+								        <div class="modal-header">
+								          <h4 class="modal-title">Turismo</h4>
+								          	<div class="contenedor-btn-code">
+									          <button type="button" class="btn btn-info">Css3</button>
+									          <button type="button" class="btn btn-warning">Java Script</button>
+									      	</div>
+									      	<div class="contenedor-btn-closeX">
+									      		<button type="button" class="btn btn-danger" data-dismiss="modal">X </button>
+									      	</div>
+								        </div>
+									        
+								        <!-- Modal body -->
+								        <div class="modal-body">
+								          <img src="ImagenesPortafolio/CodigoFuente/Turismo/imagen.png">
+								        </div>
+								        
+								        <!-- Modal footer -->
+								        <div class="modal-footer">
+								          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+								        </div>								        
+							      	</div>
+						    	</div>
+						  	</div>							  
+						</div>
 					</div>
+
 					<div class="contenedor-imagen-text">
 						<a href=""><img src="ImagenesPortafolio/calculadora.png" alt=""></a>
-						<p>Pagina Turismo Colombia</p>				
+						<p>Calculadora - <strong>JavaScript</strong></p>	
+						<div class="contenedor-botones">
+							<a href=""><button class="btn btn-primary">Visualizar</button></a>
+							<a href=""><button class="btn btn-secondary">Ver en Github</button></a>
+							<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModalCalculadora">Ver codigo fuente</button>
+							<!-- The Modal -->
+							<div class="modal fade" id="myModalCalculadora">
+						    	<div class="modal-dialog modal-lg">
+							        <div class="modal-content">
+							      
+								        <!-- Modal Header -->
+								        <div class="modal-header">
+								          <h4 class="modal-title">Calculadora</h4>
+								          	<div class="contenedor-btn-code">
+									          <button type="button" class="btn btn-info">Css3</button>
+									          <button type="button" class="btn btn-warning">Java Script</button>
+									      	</div>
+									      	<div class="contenedor-btn-closeX">
+									      		<button type="button" class="btn btn-danger" data-dismiss="modal">X </button>
+									      	</div>
+								        </div>
+									        
+								        <!-- Modal body -->
+								        <div class="modal-body">
+								          <img src="ImagenesPortafolio/CodigoFuente/Turismo/imagen.png">
+								        </div>
+								        
+								        <!-- Modal footer -->
+								        <div class="modal-footer">
+								          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+								        </div>								        
+							      	</div>
+						    	</div>
+						  	</div>							  
+						</div>
 					</div>
+
 					<div class="contenedor-imagen-text">
 						<a href=""><img src="ImagenesPortafolio/candyCrush.png" alt=""></a>
-						<p>Pagina Turismo Colombia</p>				
-					</div>	
+						<p>Juego Candy Crush - <strong>Jquery, JqueryUI</strong></p>	
+						<div class="contenedor-botones">
+							<a href=""><button class="btn btn-primary">Visualizar</button></a>
+							<a href=""><button class="btn btn-secondary">Ver en Github</button></a>
+							<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModalCandy">Ver codigo fuente</button>
+							<!-- The Modal -->
+							<div class="modal fade" id="myModalCandy">
+						    	<div class="modal-dialog modal-lg">
+							        <div class="modal-content">
+							      
+								        <!-- Modal Header -->
+								        <div class="modal-header">
+								          <h4 class="modal-title">Candy Crush</h4>
+								          	<div class="contenedor-btn-code">
+									          <button type="button" class="btn btn-info">Css3</button>
+									          <button type="button" class="btn btn-warning">Java Script</button>
+									      	</div>
+									      	<div class="contenedor-btn-closeX">
+									      		<button type="button" class="btn btn-danger" data-dismiss="modal">X </button>
+									      	</div>
+								        </div>
+									        
+								        <!-- Modal body -->
+								        <div class="modal-body">
+								          <img src="ImagenesPortafolio/CodigoFuente/Turismo/imagen.png">
+								        </div>
+								        
+								        <!-- Modal footer -->
+								        <div class="modal-footer">
+								          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+								        </div>								        
+							      	</div>
+						    	</div>
+						  	</div>							  
+						</div>
+					</div>
 				</div>
+				<!--========== Fila 2 =============== -->
 				<div class="fila1">
-					<div class="contenedor-imagen-text">
-						<a href=""><img src="ImagenesPortafolio/iphone.png" alt=""></a>
-						<p>Pagina Turismo Colombia</p>				
-					</div>
-					<div class="contenedor-imagen-text">
-						<a href=""><img src="ImagenesPortafolio/granja.png" alt=""></a>
-						<p>Pagina Turismo Colombia</p>				
-					</div>
-					<div class="contenedor-imagen-text">
-						<a href=""><img src="ImagenesPortafolio/galeria.png" alt=""></a>
-						<p>Pagina Turismo Colombia</p>				
-					</div>	
-				</div>
-				<div class="fila1">
-					<div class="contenedor-imagen-text">
-						<a href=""><img src="ImagenesPortafolio/comidasRapidas.png" alt=""></a>
-						<p>Pagina Turismo Colombia</p>				
-					</div>
 					<div class="contenedor-imagen-text">
 						<a href=""><img src="ImagenesPortafolio/ApiMarvel.png" alt=""></a>
-						<p>Pagina Turismo Colombia</p>				
+						<p>Consumiendo API Marvel - <strong>Ajax</strong></p>	
+						<div class="contenedor-botones">
+							<a href=""><button class="btn btn-primary">Visualizar</button></a>
+							<a href=""><button class="btn btn-secondary">Ver en Github</button></a>
+							<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModalMarvel">Ver codigo fuente</button>
+							<!-- The Modal -->
+							<div class="modal fade" id="myModalMarvel">
+						    	<div class="modal-dialog modal-lg">
+							        <div class="modal-content">
+							      
+								        <!-- Modal Header -->
+								        <div class="modal-header">
+								          <h4 class="modal-title">Consumiendo API Marvel</h4>
+								          	<div class="contenedor-btn-code">
+									          <button type="button" class="btn btn-info">Css3</button>
+									          <button type="button" class="btn btn-warning">Java Script</button>
+									      	</div>
+									      	<div class="contenedor-btn-closeX">
+									      		<button type="button" class="btn btn-danger" data-dismiss="modal">X </button>
+									      	</div>
+								        </div>
+									        
+								        <!-- Modal body -->
+								        <div class="modal-body">
+								          <img src="ImagenesPortafolio/CodigoFuente/Turismo/imagen.png">
+								        </div>
+								        
+								        <!-- Modal footer -->
+								        <div class="modal-footer">
+								          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+								        </div>								        
+							      	</div>
+						    	</div>
+						  	</div>							  
+						</div>
 					</div>
+
+					<div class="contenedor-imagen-text">
+						<a href=""><img src="ImagenesPortafolio/comidasRapidas.png" alt=""></a>
+						<p>Comidas Rapidas - <strong>Foundation</strong></p>	
+						<div class="contenedor-botones">
+							<a href=""><button class="btn btn-primary">Visualizar</button></a>
+							<a href=""><button class="btn btn-secondary">Ver en Github</button></a>
+							<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModalComidas">Ver codigo fuente</button>
+							<!-- The Modal -->
+							<div class="modal fade" id="myModalComidas">
+						    	<div class="modal-dialog modal-lg">
+							        <div class="modal-content">
+							      
+								        <!-- Modal Header -->
+								        <div class="modal-header">
+								          <h4 class="modal-title">Comidas Rapidas</h4>
+								          	<div class="contenedor-btn-code">
+									          <button type="button" class="btn btn-info">Css3</button>
+									          <button type="button" class="btn btn-warning">Java Script</button>
+									      	</div>
+									      	<div class="contenedor-btn-closeX">
+									      		<button type="button" class="btn btn-danger" data-dismiss="modal">X </button>
+									      	</div>
+								        </div>
+									        
+								        <!-- Modal body -->
+								        <div class="modal-body">
+								          <img src="ImagenesPortafolio/CodigoFuente/Turismo/imagen.png">
+								        </div>
+								        
+								        <!-- Modal footer -->
+								        <div class="modal-footer">
+								          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+								        </div>								        
+							      	</div>
+						    	</div>
+						  	</div>							  
+						</div>
+					</div>
+
+					<div class="contenedor-imagen-text">
+						<a href=""><img src="ImagenesPortafolio/iphone.png" alt=""></a>
+						<p>Simulador reloj de Iphone X - <strong>JavaScript</strong> </p>	
+						<div class="contenedor-botones">
+							<a href=""><button class="btn btn-primary">Visualizar</button></a>
+							<a href=""><button class="btn btn-secondary">Ver en Github</button></a>
+							<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModaliphone">Ver codigo fuente</button>
+							<!-- The Modal -->
+							<div class="modal fade" id="myModaliphone">
+						    	<div class="modal-dialog modal-lg">
+							        <div class="modal-content">
+							      
+								        <!-- Modal Header -->
+								        <div class="modal-header">
+								          <h4 class="modal-title">Simulador reloj de Iphone X</h4>
+								          	<div class="contenedor-btn-code">
+									          <button type="button" class="btn btn-info">Css3</button>
+									          <button type="button" class="btn btn-warning">Java Script</button>
+									      	</div>
+									      	<div class="contenedor-btn-closeX">
+									      		<button type="button" class="btn btn-danger" data-dismiss="modal">X </button>
+									      	</div>
+								        </div>
+									        
+								        <!-- Modal body -->
+								        <div class="modal-body">
+								          <img src="ImagenesPortafolio/CodigoFuente/Turismo/imagen.png">
+								        </div>
+								        
+								        <!-- Modal footer -->
+								        <div class="modal-footer">
+								          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+								        </div>								        
+							      	</div>
+						    	</div>
+						  	</div>							  
+						</div>
+					</div>
+				</div>
+				<!-- =================Fila 3 =================== -->
+				<div class="fila1">
+					<div class="contenedor-imagen-text">
+						<a href=""><img src="ImagenesPortafolio/tiendaOnline.png" alt=""></a>
+						<p>Tienda Online - <strong>Foundation</strong></p>	
+						<div class="contenedor-botones">
+							<a href=""><button class="btn btn-primary">Visualizar</button></a>
+							<a href=""><button class="btn btn-secondary">Ver en Github</button></a>
+							<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModalTonline">Ver codigo fuente</button>
+							<!-- The Modal -->
+							<div class="modal fade" id="myModalTonline">
+						    	<div class="modal-dialog modal-lg">
+							        <div class="modal-content">
+							      
+								        <!-- Modal Header -->
+								        <div class="modal-header">
+								          <h4 class="modal-title">Tienda Online</h4>
+								          	<div class="contenedor-btn-code">
+									          <button type="button" class="btn btn-info">Css3</button>
+									          <button type="button" class="btn btn-warning">Java Script</button>
+									      	</div>
+									      	<div class="contenedor-btn-closeX">
+									      		<button type="button" class="btn btn-danger" data-dismiss="modal">X </button>
+									      	</div>
+								        </div>
+									        
+								        <!-- Modal body -->
+								        <div class="modal-body">
+								          <img src="ImagenesPortafolio/CodigoFuente/Turismo/imagen.png">
+								        </div>
+								        
+								        <!-- Modal footer -->
+								        <div class="modal-footer">
+								          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+								        </div>								        
+							      	</div>
+						    	</div>
+						  	</div>							  
+						</div>
+					</div>
+
+					<div class="contenedor-imagen-text">
+						<a href=""><img src="ImagenesPortafolio/granja.png" alt=""></a>
+						<p>Juego de Granja - <strong>Jquery</strong></p>	
+						<div class="contenedor-botones">
+							<a href=""><button class="btn btn-primary">Visualizar</button></a>
+							<a href=""><button class="btn btn-secondary">Ver en Github</button></a>
+							<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModalGranja">Ver codigo fuente</button>
+							<!-- The Modal -->
+							<div class="modal fade" id="myModalGranja">
+						    	<div class="modal-dialog modal-lg">
+							        <div class="modal-content">
+							      
+								        <!-- Modal Header -->
+								        <div class="modal-header">
+								          <h4 class="modal-title">Granja game</h4>
+								          	<div class="contenedor-btn-code">
+									          <button type="button" class="btn btn-info">Css3</button>
+									          <button type="button" class="btn btn-warning">Java Script</button>
+									      	</div>
+									      	<div class="contenedor-btn-closeX">
+									      		<button type="button" class="btn btn-danger" data-dismiss="modal">X </button>
+									      	</div>
+								        </div>
+									        
+								        <!-- Modal body -->
+								        <div class="modal-body">
+								          <img src="ImagenesPortafolio/CodigoFuente/Turismo/imagen.png">
+								        </div>
+								        
+								        <!-- Modal footer -->
+								        <div class="modal-footer">
+								          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+								        </div>								        
+							      	</div>
+						    	</div>
+						  	</div>							  
+						</div>
+					</div>
+
 					<div class="contenedor-imagen-text">
 						<a href=""><img src="ImagenesPortafolio/ApiGitpng.png" alt=""></a>
-						<p>Pagina Turismo Colombia</p>				
-					</div>	
+						<p>Consumiendo API de GitHub - <strong>Ajax</strong></p>	
+						<div class="contenedor-botones">
+							<a href=""><button class="btn btn-primary">Visualizar</button></a>
+							<a href=""><button class="btn btn-secondary">Ver en Github</button></a>
+							<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModaliphone">Ver codigo fuente</button>
+							<!-- The Modal -->
+							<div class="modal fade" id="myModaliphone">
+						    	<div class="modal-dialog modal-lg">
+							        <div class="modal-content">
+							      
+								        <!-- Modal Header -->
+								        <div class="modal-header">
+								          <h4 class="modal-title">API Github</h4>
+								          	<div class="contenedor-btn-code">
+									          <button type="button" class="btn btn-info">Css3</button>
+									          <button type="button" class="btn btn-warning">Java Script</button>
+									      	</div>
+									      	<div class="contenedor-btn-closeX">
+									      		<button type="button" class="btn btn-danger" data-dismiss="modal">X </button>
+									      	</div>
+								        </div>
+									        
+								        <!-- Modal body -->
+								        <div class="modal-body">
+								          <img src="ImagenesPortafolio/CodigoFuente/Turismo/imagen.png">
+								        </div>
+								        
+								        <!-- Modal footer -->
+								        <div class="modal-footer">
+								          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+								        </div>								        
+							      	</div>
+						    	</div>
+						  	</div>							  
+						</div>
+					</div>
+				</div>
+				<div class="contenedor-vermas">
+					<a href="https://github.com/cristian9829" target="blanck"><button class="btn btn-warning">ver mas en - <img src="icons/github-logo.png"></button></a>
 				</div>
 			</div>		
-			<div class="contenedor-vermas">
-				<input class="vermas" type="submit" value="ver mas">				
+
+			<div id="contenedorInteres" class="contenedor-SincontenidoInteres">				
 			</div>
 		</div>
 
 		<!-- ====================================INTERES=======================================-->
 
-		<div id="contenedorInteres" class="contenedorInteres">
+		<div class="contenedorInteres">
 			<div class="contenedorTitulo">
-				<p>Intereses</p>
+				<p>INTERESES</p>
 			</div>
 			<div class="texto">
 				<p>

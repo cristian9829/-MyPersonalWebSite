@@ -99,6 +99,12 @@
 		text-shadow: 2px 2px grey;
 	}
 
+	.contenedorPortada .titulo{
+		border: 1px solid white;
+	}
+
+
+
 
 	.contenedorFoto{
 		width:99%;

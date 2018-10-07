@@ -1,6 +1,7 @@
 @media only screen and (max-width:1980px) and (min-width: 1280px){
 	body{
 		margin: 0;
+		
 	}
 
 	/*====================Barra de Navegacion=============*/
@@ -9,7 +10,7 @@
 		width: 100%;
 		/*background: black;*/
 		display:none;
-		height:55px;
+		height:70px;
 		justify-content: space-between;
 	}
 
@@ -32,12 +33,14 @@
 
 	header .contenedorTitulo{
 		display: flex;
-		padding-left:15%;
-		color: white;
-		font-family: 'Kaushan Script', cursive;
-		color: yellow;
-		font-size:70%;
-		text-shadow: 1px 2px black;
+		padding-left:10%;
+	}
+
+	header .contenedorTitulo .logo-menu{
+		width:30%;
+		background-color:white;
+		border-radius:5px;
+		border: 2px solid black; 
 	}
 
 	.menu ul{
@@ -46,6 +49,7 @@
 		justify-content:flex-end;/*Ubicar los botones*/
 		margin-right:80px; 
 		font-family: 'Roboto', sans-serif;
+		width:90%;
 	}
 	.menu li{
 		text-align: center;
@@ -58,16 +62,15 @@
 
 	.menu li a{
 		display:block;
-		padding:5px 15px;
+		padding:20px 20px;
 		color: white;
 		text-decoration: none;
 	}
 
+
 	/*=============================PORTADA===================================*/
-
-
-
 	video{
+		background-color: black;	
 		position:fixed;
 		min-width:100%;
 		min-height:100%;
@@ -75,33 +78,34 @@
 		left: 50%;
 		transform: translateX(-50%) translateY(-50%);
 		z-index:-1;
-		-webkit-filter:opacity(80%);
 	}
 
 	.contenedorPortada{
-	 	background-image: url("../Imagenes/architecture-768432_1920.jpg");
+	 	/*background-image: url("../Imagenes/architecture-768432_1920.jpg");*/
 		height:900px;
 		width: 100%;
 	}
 
 	.contenedorPortada .titulo{
-		padding-top:2%;
-		padding-left: 2%;
-		color: white;
-		font-family: 'Kaushan Script', cursive;
-		color:#F1C40F  ;
-		font-size:100%;
-		text-shadow: 1px 2px black;
+		padding:2px;
+		margin-left:2%;
+		width:20%;
+		text-align: center;
+		border-radius:10px;
 	}
 
+	.contenedorPortada .titulo .logo{
+		width:80%;
+		background-color:white;
+		border-radius: 5px;
+	}
 
 	.contenedorFoto{
-		width:99%;
-		height:300px; 
-		margin: auto;
+		width:90%;
+		height:270px; 
+		margin: 0 auto;
 		display: flex;
 		justify-content: center;
-		margin-top: 150px;
 	}
 
 
@@ -112,23 +116,42 @@
 		box-shadow: 0 0 20px black;
 	}
 
-	.contenedorBotones .botones{
+	.contenedorPortada .saludo{
+		color: white;
+		display: flex;
+		justify-content: center;
+	}
+
+	.contenedorPortada .saludo p{
+		font-size:35px;
+		font-family: 'Montserrat';
+		font-weight: bold;
+	}
+
+	.contenedor-boton{
 		width:75%;
 		height:40px; 
 		margin: auto;
-		margin-top:30px;
+		margin-top:40px;
 		display: flex;
-		justify-content:space-around;
+		justify-content:center;
+		height:90px;
 	}
 
-	.contenedorBotones .botones button{
+	.contenedor-boton button{
 		border:none;
-		background:rgb(189, 195, 199);
+		background:#F4D03F;
 		color: white;
 		font-size: 20px;
-		font-family: 'Baloo Paaji';
-		border-radius: 5px;
+		font-family: 'Roboto', sans-serif;
+		font-weight: bold;
+		border-radius:10px;
 		cursor: pointer;
+		width:20%;
+	}
+
+	.contenedor-SincontenidoHabilidades{
+		margin-top:200px;
 	}
 
 	/*==================Habilidades================================*/
@@ -140,8 +163,8 @@
 		margin-top:-40px;
 		width:100%;
 		height:800px;
-		background-repeat: no-repeat;
 		text-align: center;
+		background-color: white;
 	}
 
 	.contenedorSkills .contenedorTitulo{
@@ -184,7 +207,6 @@
 	}
 
 	.contenedor-imagenes-skills{
-		/*background-color:rgba(173, 168, 168,0.8); */
 		width: 95%;
 		margin-left:50px;
 	}
@@ -194,32 +216,43 @@
 		font-weight: bold;
 	}
 
-	.contenedor-imagenes-skills .imagenes{
-		display: none;
+	.contenedor-imagenes-skills .contenedor-imagenes-skills-logos-Front{
+		display: flex;
+		flex-direction: row;
+		justify-content:space-around;		
+		font-size:5px;
 	}
 
 	.contenedor-imagenes-skills .imagen-skills{
 		max-width:15%;
 	}
 
+	.contenedor-SincontenidoEducacion{
+		margin-top:190px;
+	}
+
+	.modal-body{
+
+	}
+
 	/*=======================Educacion============================*/
 
 	.contenedorEducacion{
 		background-color: white;
-		margin-top: -70px;
 		width: 100%;
-		height:1100px;
-		margin: 0 auto;
+		height:1000px;
 	}
 
 	.contenedorEducacion .contenedorTitulo{
 		background:rgba(241, 196, 15,0.9);
-		font-family: 'Baloo Paaji';
+		font-family: 'Montserrat';
+		font-weight: bold;
+		color: #2E2E2E;
 		font-size:40px;
 		text-align: center;
 		border-bottom: 5px solid grey;
 		height: 70px;
-		margin-bottom: 25px;
+		margin-bottom:50px;
 	}
 
 	.contenedor-Educacion{
@@ -257,6 +290,10 @@
 		font-style: italic;
 	}
 
+	.contenedor-SincontenidoPortafolio{
+		margin-top:60px;
+	}
+
 
 
 
@@ -271,7 +308,9 @@
 
 	.contenedorPortafolio .contenedorTitulo{
 		background:rgba(241, 196, 15,0.9);
-		font-family: 'Baloo Paaji';
+		font-family: 'Montserrat';
+		font-weight: bold;
+		color: #2E2E2E;
 		font-size:40px;
 		text-align: center;
 		border-bottom: 5px solid grey;
@@ -300,21 +339,61 @@
 		max-width:100%;
 	}
 
+	.contenedor-portafolio-proyectos .contenedor-botones{
+		display: flex;
+		justify-content: space-around;
+		margin-bottom:10px; 
+	}
+
+	.contenedor-portafolio-proyectos .contenedor-botones button , .vermas{
+		color: white;
+		width:30%;
+		font-size:9px;
+	}
+
+	.contenedor-portafolio-proyectos .contenedor-botones a button{
+		color: white;
+		width:100%;
+		font-size:9px;
+	}
+
+	.contenedor-btn-code{
+		
+		width:40%;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.contenedor-btn-closeX button{
+		padding-right:18px;
+	}
+
+	.contenedor-btn-code button{
+		padding: 10px;
+	}
+	
+
+
 	.contenedor-vermas{
 		display: flex;
 		justify-content: center;
+		margin:0 auto;
 		margin-top: 15px;
+		width: 50%;
 	}
 
-	.contenedor-vermas input{
-		color: white;
+	.contenedor-vermas a button{
 		background: #F4D03F;
+		color: white;
 		border: none;
-		padding:5px;
-		border-radius:2px; 
-		cursor: pointer;
+		border-radius:5px;
+		padding:20px; 
+		cursor: pointer; 
+		font-size:20px;
+		width: 100%;
+		font-weight: bold;
+		border-bottom:3px solid rgba(127, 140, 141  ,0.8);
 	}
-
 
 	/*================INTERESES=========================*/
 	.contenedorInteres{
@@ -325,8 +404,10 @@
 
 	.contenedorInteres .contenedorTitulo{
 		background:rgba(241, 196, 15,0.9);
-		font-family: 'Lato', "bold";
-		font-size:50px;
+		font-family: 'Montserrat';
+		font-weight: bold;
+		color: #2E2E2E;
+		font-size:40px;
 		text-align: center;
 		border-bottom: 5px solid grey;
 		height: 70px;
@@ -377,9 +458,9 @@
 	}
 
 	.contenedorContacto .contenedorTitulo p{
-		font-family: 'Baloo Paaji';
-		font-weight: normal;
-		color: #FDFEFE;
+		font-family: 'Montserrat';
+		font-weight: bold;
+		color:white;
 		font-size:70px;
 		text-shadow: 3px 3px #616A6B;
 		padding-bottom:80px;
