@@ -1,0 +1,127 @@
+body{
+	background-image: url(../imagenes/Fondo.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.contenedor-titulo{
+	background-image:url(../imagenes/fondo-titulo.jpg); 
+	background-attachment: fixed;
+}
+
+.contenedor-titulo-titulo{
+	background-color: rgba(79, 73, 68,0.6);
+	border-radius:10px;
+}
+
+.titulo-favoritefoods{
+	font-family: "pacifico";
+	font-size: 40px;
+	color: white;
+	font-weight:bold;
+	text-shadow: 2px 4px black;	
+	padding-right: 2px;
+}
+
+.eslogan{
+	font-family: "pacifico";
+	font-size: 20px;
+	color: white;
+	text-shadow: 2px 2px grey;
+}
+
+img{
+	border: 2px solid grey;
+}
+
+.borde{
+	border:1px solid black;
+}
+
+.contenedor-izquierdo{
+	background-color:rgba(127, 100, 65  ,0.9);
+	height: 1050px;
+}
+
+.contenedor-derecho{
+	background-color:rgba(153, 163, 164,0.5);
+}
+
+.padding{
+	padding-top: 6%;
+}
+
+.padding-botones{
+	padding-left:10%; 
+}
+
+
+.fecha{
+	color: white;
+	font-weight:bold;
+}
+
+.favoritos{
+	background-color:rgba(114, 110, 87,0.5);
+	border-radius:2px;
+	font-family: "pacifico";
+	font-size: 30px;
+}
+
+h2{
+	font-family: "pacifico";
+	background-color: rgba(61, 58, 54,0.8);
+	width: 42%;
+	border-radius:5px;
+	border:2px solid black;
+	text-align: center;
+}
+.texto{
+	font-size: 15px;
+	font-weight:bold;
+	background-color: rgba(61, 58, 54,0.5);
+	border-radius: 5px;
+	color: white;
+	text-shadow: 1px 2px black;
+}
+
+.botones-nav{
+	background-color:rgba(200, 53, 20,0.8);
+	color: white;
+	border:1px solid black;
+	border-radius:12px;
+	padding: 8px;
+	font-size: 15px;
+	font-weight:bold;
+}
+
+.botones-nav:hover{
+	background-color:rgba(200, 173, 20,0.8);
+	color: black;
+}
+
+.contenedor-favoritos-imagenes{
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
+
+.tamaño-imagenes-favoritos{
+	width:100%;
+	height: 100px;
+}
+
+.historial-menu{
+	background-color: rgba(159, 159, 146,0.3);
+}
+
+.botones-historial{
+	border: 1px solid grey;
+	border-radius:4px;
+	color:white;
+	background-color: rgb(79, 78, 59);
+}
+
+.size-36{
+	font-size:45px;
+}
