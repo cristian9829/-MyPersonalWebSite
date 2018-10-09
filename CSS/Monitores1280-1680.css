@@ -364,6 +364,10 @@
 		justify-content: space-around;
 	}
 
+	.modal-body img{
+		width: 95%;
+	}
+
 	.contenedor-btn-closeX button{
 		padding-right:18px;
 	}
