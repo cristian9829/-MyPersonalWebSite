@@ -79,7 +79,7 @@ $(document).ready(function(){ /*Bloque de codigo JQUERY*/
 	$( window ).scroll(function(){
     	var dato =  $(window).scrollTop();
 
-    	if (dato>10) {
+    	if ($( window ).width() >= 900 && dato>10) {
     	$("header").css({
     			"background-color":"black",
     			"display":"flex",
