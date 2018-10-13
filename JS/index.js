@@ -204,4 +204,21 @@ $(document).ready(function(){ /*Bloque de codigo JQUERY*/
   	$("#jsGit").on("click",function(){
 	  	codeJs("#myModalGit","github","1");  			
   	});
+
+  	$("#ln").on("click",function(){
+  		url = 'https://www.linkedin.com/in/cristi%C3%A1n-clavijo-3b3ab7171/'; 
+  		window.location.href = url;
+  	})
+
+  	$("#gmail").on("click",function(){
+  		url = 'mailto:cristian982940@gmail.com'; 
+  		window.location.href = url;
+  		
+  	})
+
+
+  	$("#git").on("click",function(){
+  		url = 'https://github.com/cristian9829'; 
+  		window.location.href = url;
+  	})
 })
